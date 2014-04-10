@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.6.3.v20111028-0207 Build &lt;2.6.3.v20111028-0207></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <data-sources>
+        <script-data-source name="Data Source" id="7"/>
+    </data-sources>
+    <data-sets>
+        <script-data-set name="Data Set" id="8">
+            <list-property name="resultSetHints">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Key</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Value</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ValueType</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Key</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Value</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ValueType</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Key</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Value</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ValueType</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <method name="open"><![CDATA[keysIter = reportContext.getAppContext().keySet().iterator();]]></method>
+            <method name="fetch"><![CDATA[if (keysIter.hasNext()) {
+	var key = keysIter.next();
+	var value = reportContext.getAppContext().get(key);
+	var valueType = value.getClass().getName();	
+	row["Key"] = key;
+	row["Value"] = value;
+	row["ValueType"] = valueType;
+	return true;
+} else {
+	return false;
+}]]></method>
+        </script-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">"Verdana"</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="topMargin">0.25in</property>
+            <property name="leftMargin">0.25in</property>
+            <property name="bottomMargin">0.25in</property>
+            <property name="rightMargin">0.25in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="9">
+            <property name="width">100%</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Key</property>
+                    <text-property name="displayName">Key</text-property>
+                    <expression name="expression">dataSetRow["Key"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Value</property>
+                    <text-property name="displayName">Value</text-property>
+                    <expression name="expression">dataSetRow["Value"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ValueType</property>
+                    <text-property name="displayName">ValueType</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ValueType"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="pageBreakInterval">0</property>
+            <column id="23"/>
+            <column id="24"/>
+            <column id="28"/>
+            <header>
+                <row id="10">
+                    <cell id="11">
+                        <property name="textAlign">left</property>
+                        <label id="12">
+                            <text-property name="text">Key</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <property name="textAlign">left</property>
+                        <label id="14">
+                            <text-property name="text">Value</text-property>
+                        </label>
+                    </cell>
+                    <cell id="25">
+                        <property name="textAlign">left</property>
+                        <label id="29">
+                            <text-property name="text">ValueType</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="15">
+                    <list-property name="highlightRules">
+                        <structure>
+                            <property name="operator">eq</property>
+                            <property name="backgroundColor">#F0F0FF</property>
+                            <expression name="testExpr">row.__rownum % 2</expression>
+                            <simple-property-list name="value1">
+                                <value>0</value>
+                            </simple-property-list>
+                        </structure>
+                    </list-property>
+                    <cell id="16">
+                        <property name="textAlign">left</property>
+                        <data id="17">
+                            <property name="resultSetColumn">Key</property>
+                        </data>
+                    </cell>
+                    <cell id="18">
+                        <property name="textAlign">left</property>
+                        <data id="19">
+                            <property name="whiteSpace">normal</property>
+                            <property name="resultSetColumn">Value</property>
+                        </data>
+                    </cell>
+                    <cell id="26">
+                        <property name="textAlign">left</property>
+                        <data id="30">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">ValueType</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="20">
+                    <cell id="21">
+                        <property name="textAlign">left</property>
+                    </cell>
+                    <cell id="22">
+                        <property name="textAlign">left</property>
+                    </cell>
+                    <cell id="27">
+                        <property name="textAlign">left</property>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+        <grid id="42">
+            <property name="borderTopColor">#000000</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">2px</property>
+            <property name="marginTop">15pt</property>
+            <column id="43"/>
+            <row id="44">
+                <cell id="45">
+                    <text-data id="31">
+                        <expression name="valueExpr">"Authentication Id: " + reportContext.getAppContext().get("ServerContext").getAuthenticationId();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="38">
+                        <expression name="valueExpr">"User Name: " + reportContext.getAppContext().get("ServerContext").getUserName();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="34">
+                        <expression name="valueExpr">"Volume Name: " + reportContext.getAppContext().get("ServerContext").getVolumeName();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="35">
+                        <expression name="valueExpr">"Version Name: " + reportContext.getAppContext().get("ServerContext").getVersionName();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="33">
+                        <expression name="valueExpr">"User Agent: " + reportContext.getAppContext().get("ServerContext").getUserAgentString();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="32">
+                        <expression name="valueExpr">"Server Working Directory: " + reportContext.getAppContext().get("ServerContext").getServerWorkingDirectory();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="37">
+                        <expression name="valueExpr">"Headline: " + reportContext.getAppContext().get("ServerContext").getHeadline();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="36">
+                        <expression name="valueExpr">"Job Status: " + reportContext.getAppContext().get("ServerContext").getJobStatus();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="39">
+                        <expression name="valueExpr">reportContext.getAppContext().get("ServerContext").appendToJobStatus("App Context\n");&#13;
+ "Appended \"App Context\" to job status!";</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>
