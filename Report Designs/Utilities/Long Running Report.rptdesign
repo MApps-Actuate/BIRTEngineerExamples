@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">72</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="NumRecords" id="9">
+            <text-property name="promptText">Number of Records</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">5000</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="ForcedDelayRecs" id="10">
+            <text-property name="promptText">Record blocks to force delay</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">100</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="ForcedDelayTime" id="11">
+            <text-property name="promptText">Delay length (in milliseconds)</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">1000</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <script-data-source name="Data Source" id="7"/>
+    </data-sources>
+    <data-sets>
+        <script-data-set name="Data Set" id="8">
+            <list-property name="resultSetHints">
+                <structure>
+                    <property name="position">0</property>
+                    <property name="name">Id</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Column 1</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Column 2</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Id</property>
+                    <property name="analysis">measure</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Column 1</property>
+                    <property name="analysis">dimension</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Column 2</property>
+                    <property name="analysis">dimension</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Id</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Column 1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Column 2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <method name="open"><![CDATA[totalRecs = params["NumRecords"].value;
+delayRecs = params["ForcedDelayRecs"].value;
+delayTime = params["ForcedDelayTime"].value;
+currentRec = 0;]]></method>
+            <method name="fetch"><![CDATA[if (currentRec >= totalRecs)
+	return false;
+
+if (currentRec % delayRecs == 0)
+	Packages.java.lang.Thread.sleep(delayTime);
+	
+currentRec++;
+row["Id"] = currentRec;
+row["Column 1"] = "Record # " + currentRec;
+row["Column 2"] = "Static String";
+
+return true;]]></method>
+        </script-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="12">
+            <property name="dataSet">Data Set</property>
+            <property name="theme">ThemesReportItems3.Modern Table</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Id</property>
+                    <text-property name="displayName">Id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Id"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Column 1</property>
+                    <text-property name="displayName">Column 1</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Column 1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Column 2</property>
+                    <text-property name="displayName">Column 2</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Column 2"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="31"/>
+            <column id="32"/>
+            <column id="33"/>
+            <header>
+                <row id="13">
+                    <cell id="14">
+                        <label id="15">
+                            <text-property name="text">Id</text-property>
+                        </label>
+                    </cell>
+                    <cell id="16">
+                        <label id="17">
+                            <text-property name="text">Column 1</text-property>
+                        </label>
+                    </cell>
+                    <cell id="18">
+                        <label id="19">
+                            <text-property name="text">Column 2</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="20">
+                    <cell id="21">
+                        <data id="22">
+                            <property name="resultSetColumn">Id</property>
+                        </data>
+                    </cell>
+                    <cell id="23">
+                        <data id="24">
+                            <property name="resultSetColumn">Column 1</property>
+                        </data>
+                    </cell>
+                    <cell id="25">
+                        <data id="26">
+                            <property name="resultSetColumn">Column 2</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="27">
+                    <cell id="28"/>
+                    <cell id="29"/>
+                    <cell id="30"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 2.6.3.v20111028-0207 Build &lt;2.6.3.v20111028-0207></property>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <property name="units">in</property>
     <property name="iconFile">/templates/blank_report.gif</property>
     <property name="layoutPreference">auto layout</property>
@@ -259,6 +259,10 @@
                         <property name="contentType">html</property>
                     </text-data>
                     <text-data id="39">
+                        <expression name="valueExpr">"Report Design: " + reportContext.getReportRunnable().getReportName();</expression>
+                        <property name="contentType">html</property>
+                    </text-data>
+                    <text-data id="47">
                         <expression name="valueExpr">reportContext.getAppContext().get("ServerContext").appendToJobStatus("App Context\n");&#13;
  "Appended \"App Context\" to job status!";</expression>
                         <property name="contentType">html</property>

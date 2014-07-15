@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="showLegend" id="9">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">Yes</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">Yes</property>
+                </structure>
+                <structure>
+                    <property name="value">No</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.eclipse.birt.report.data.oda.sampledb.Driver</property>
+            <property name="odaURL">jdbc:classicmodels:sampledb</property>
+            <property name="odaUser">ClassicModels</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Orders Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">ORDERNUMBER</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ORDERNUMBER</text-property>
+                    <text-property name="heading">ORDERNUMBER</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ORDERDATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ORDERDATE</text-property>
+                    <text-property name="heading">ORDERDATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">REQUIREDDATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">REQUIREDDATE</text-property>
+                    <text-property name="heading">REQUIREDDATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SHIPPEDDATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SHIPPEDDATE</text-property>
+                    <text-property name="heading">SHIPPEDDATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">STATUS</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">STATUS</text-property>
+                    <text-property name="heading">STATUS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">COMMENTS</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COMMENTS</text-property>
+                    <text-property name="heading">COMMENTS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CUSTOMERNUMBER</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CUSTOMERNUMBER</text-property>
+                    <text-property name="heading">CUSTOMERNUMBER</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ORDERNUMBER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">ORDERDATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">REQUIREDDATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">SHIPPEDDATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">STATUS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">COMMENTS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">CUSTOMERNUMBER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ORDERNUMBER</property>
+                    <property name="nativeName">ORDERNUMBER</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">ORDERDATE</property>
+                    <property name="nativeName">ORDERDATE</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">REQUIREDDATE</property>
+                    <property name="nativeName">REQUIREDDATE</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">SHIPPEDDATE</property>
+                    <property name="nativeName">SHIPPEDDATE</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">STATUS</property>
+                    <property name="nativeName">STATUS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">COMMENTS</property>
+                    <property name="nativeName">COMMENTS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">CUSTOMERNUMBER</property>
+                    <property name="nativeName">CUSTOMERNUMBER</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select *
+from CLASSICMODELS.ORDERS
+WHERE CLASSICMODELS.ORDERS.STATUS <> 'Shipped']]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ORDERNUMBER</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ORDERNUMBER</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ORDERNUMBER</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ORDERDATE</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ORDERDATE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ORDERDATE</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>REQUIREDDATE</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>REQUIREDDATE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>REQUIREDDATE</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>SHIPPEDDATE</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>SHIPPEDDATE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>SHIPPEDDATE</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>STATUS</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>15</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>STATUS</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>STATUS</design:label>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COMMENTS</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>32700</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COMMENTS</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COMMENTS</design:label>
+            <design:formattingHints>
+              <design:displaySize>32700</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CUSTOMERNUMBER</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CUSTOMERNUMBER</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CUSTOMERNUMBER</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="11">
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<button id="b1"> hide/show legend </button>
+<script>
+//toggle = "<VALUE-OF>params["showLegend"].value</VALUE-OF>";
+</script>]]></text-property>
+        </text>
+        <extended-item extensionName="Chart" name="myChart" id="10">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" script="&#10;">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <cursor type="0"/>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,572.25,286.125"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <triggers condition="15">
+    <action type="3">
+     <value _type="ScriptValue" script="//if (toggle==&quot;No&quot;) this.legend.group.hide();&#13;&#10;var i=0;&#13;&#10;var myChart = this;&#13;&#10;debugger;&#13;&#10;// $(&quot;#b1&quot;).click(function() { myChart.legend.group.hide(); });&#13;&#10;&#13;&#10;    $(&quot;#b1&quot;).click(function() {&#13;&#10;        if (i % 2) {&#13;&#10;            myChart.legend.group.show();&#13;&#10;            //myChart.legend.box.show();&#13;&#10;        } else {&#13;&#10;           myChart.legend.group.hide();&#13;&#10;            //myChart.legend.box.hide();&#13;&#10;        }&#13;&#10;        i++;&#13;&#10;&#13;&#10;    });"/>
+    </action>
+   </triggers>
+   <cursor type="0"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <extendedProperties name="jschart.animation" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000,03/12/2000,02/29/2000"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes type="3">
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="row[&quot;STATUS&quot;]">
+      <grouping groupingUnit="7"/>
+     </query>
+     <series _type="BarSeries" seriesIdentifier="Series 1" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;CUSTOMERNUMBER&quot;]">
+       <grouping enabled="true" aggregateExpression="Count"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;ORDERDATE&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupingUnit="7" groupType="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <property name="inheritColumns">true</property>
+            <property name="height">286.125pt</property>
+            <property name="width">572.25pt</property>
+            <property name="dataSet">Orders Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">ORDERNUMBER</property>
+                    <expression name="expression" type="javascript">dataSetRow["ORDERNUMBER"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">ORDERDATE</property>
+                    <expression name="expression" type="javascript">dataSetRow["ORDERDATE"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">REQUIREDDATE</property>
+                    <expression name="expression" type="javascript">dataSetRow["REQUIREDDATE"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">SHIPPEDDATE</property>
+                    <expression name="expression" type="javascript">dataSetRow["SHIPPEDDATE"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">STATUS</property>
+                    <expression name="expression" type="javascript">dataSetRow["STATUS"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">COMMENTS</property>
+                    <expression name="expression" type="javascript">dataSetRow["COMMENTS"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CUSTOMERNUMBER</property>
+                    <expression name="expression" type="javascript">dataSetRow["CUSTOMERNUMBER"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+            <property name="theme">ThemesReportItems3.Modern</property>
+        </extended-item>
+    </body>
+</report>

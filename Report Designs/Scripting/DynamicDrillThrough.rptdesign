@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <method name="onContentUpdate"><![CDATA[if (!this.getViewer().isInteractive())
+this.getViewer().enableIV();]]></method>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.excel" name="BIRT Engineer Examples file" id="7">
+            <property name="URI">Data/BIRT Engineer Examples.xlsx</property>
+            <property name="INCLCOLUMNNAME">yes</property>
+            <property name="INCLTYPELINE">no</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.excel.dataSet" name="BIRT Engineer Examples" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Description</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Description</text-property>
+                    <text-property name="heading">Description</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Category</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Category</text-property>
+                    <text-property name="heading">Category</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Explanation</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Explanation</text-property>
+                    <text-property name="heading">Explanation</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Author</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Author</text-property>
+                    <text-property name="heading">Author</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Source</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Source</text-property>
+                    <text-property name="heading">Source</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">rptdesign</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">rptdesign</text-property>
+                    <text-property name="heading">rptdesign</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Category</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Explanation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Author</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Source</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">rptdesign</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">BIRT Engineer Examples file</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Description</property>
+                    <property name="nativeName">Description</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Category</property>
+                    <property name="nativeName">Category</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Explanation</property>
+                    <property name="nativeName">Explanation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">Author</property>
+                    <property name="nativeName">Author</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">Source</property>
+                    <property name="nativeName">Source</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">rptdesign</property>
+                    <property name="nativeName">rptdesign</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select "Description", "Category", "Explanation", "Author", "Source", "rptdesign" from "/C:/Users/ActuateUser/git/BIRTEngineerExamples/Data/BIRT Engineer Examples.xlsx" : {"Description","Description",STRING;"Category","Category",STRING;"Explanation","Explanation",STRING;"Author","Author",STRING;"Source","Source",STRING;"rptdesign","rptdesign",STRING}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Description</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Description</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Description</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Category</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Category</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Category</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Explanation</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Explanation</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Explanation</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Author</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Author</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Author</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Source</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Source</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Source</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>rptdesign</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>rptdesign</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>rptdesign</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <property name="WORKSHEETS">Sheet1</property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="9">
+            <list-property name="userProperties">
+                <structure>
+                    <property name="name">__ac_group_collapse_level</property>
+                    <property name="type">string</property>
+                </structure>
+            </list-property>
+            <property name="__ac_group_collapse_level">2</property>
+            <property name="dataSet">BIRT Engineer Examples</property>
+            <property name="theme">ThemesReportItems3.Modern Table</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Description</property>
+                    <text-property name="displayName">Description</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Description"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Category</property>
+                    <text-property name="displayName">Category</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Explanation</property>
+                    <text-property name="displayName">Explanation</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Explanation"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Author</property>
+                    <text-property name="displayName">Author</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Author"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Source</property>
+                    <text-property name="displayName">Source</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Source"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">rptdesign</property>
+                    <text-property name="displayName">rptdesign</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["rptdesign"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <expression name="expression" type="javascript">reportContext.getReportRunnable().getReportName().substr(0,reportContext.getReportRunnable().getReportName().indexOf("Report Designs/Examples.rptdesign"))</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding_1</property>
+                    <expression name="expression" type="javascript">"Report Design: " + reportContext.getReportRunnable().getReportName();</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding_2</property>
+                    <expression name="expression" type="javascript">reportContext.getReportRunnable().getReportName()</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="94"/>
+            <column id="43"/>
+            <column id="46">
+                <property name="display">none</property>
+            </column>
+            <column id="47">
+                <property name="display">none</property>
+            </column>
+            <column id="48"/>
+            <header>
+                <row id="10">
+                    <cell id="89">
+                        <label id="95">
+                            <text-property name="text">Category</text-property>
+                        </label>
+                    </cell>
+                    <cell id="11">
+                        <label id="12">
+                            <text-property name="text">Description</text-property>
+                        </label>
+                    </cell>
+                    <cell id="17">
+                        <label id="18">
+                            <text-property name="text">Author</text-property>
+                        </label>
+                    </cell>
+                    <cell id="19">
+                        <label id="20">
+                            <text-property name="text">Source</text-property>
+                        </label>
+                    </cell>
+                    <cell id="21">
+                        <label id="22">
+                            <text-property name="text">rptdesign</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <group id="56">
+                <property name="groupName">Category</property>
+                <expression name="keyExpr" type="javascript">row["Category"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["Category"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <header>
+                    <row id="57">
+                        <cell id="90">
+                            <data id="69">
+                                <property name="fontWeight">bold</property>
+                                <property name="resultSetColumn">Category</property>
+                            </data>
+                        </cell>
+                        <cell id="58"/>
+                        <cell id="60"/>
+                        <cell id="61"/>
+                        <cell id="62"/>
+                    </row>
+                </header>
+            </group>
+            <group id="70">
+                <property name="groupName">NewTableGroup2</property>
+                <expression name="keyExpr" type="javascript">row["Description"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["Description"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <header>
+                    <row id="71">
+                        <cell id="91"/>
+                        <cell id="72">
+                            <data id="81">
+                                <property name="resultSetColumn">Description</property>
+                            </data>
+                        </cell>
+                        <cell id="73">
+                            <data id="31">
+                                <property name="resultSetColumn">Author</property>
+                            </data>
+                        </cell>
+                        <cell id="74">
+                            <data id="33">
+                                <property name="resultSetColumn">Source</property>
+                            </data>
+                        </cell>
+                        <cell id="75">
+                            <data id="35">
+                                <method name="onCreate"><![CDATA[//create a new action
+var action = this.createAction();
+
+//in a normal report, you would use this to create the drill through
+//and set the drill through instance on the action
+
+var drillThroughInstance = action.createDrillThrough();
+
+var rptdesignPath=this.getRowData().getColumnValue("rptdesign");
+var rootPath=reportContext.getReportRunnable().getReportName().substr(0,reportContext.getReportRunnable().getReportName().indexOf("Report Designs/"));
+var hyperlinkStart="/iportal/servlet/GenericRedirector?command=submit&amp;__requesttype=immediate&amp;invokeSubmit=true&amp;__executableName=";
+var hyperlinkEnd="&amp;__locale=en_US&amp;__masterpage=true&amp;__svg=true&amp;__newWindow=false";
+var originalHyperlink=this.getHyperlink();
+
+
+action.setHyperlink(hyperlinkStart+rootPath+rptdesignPath+hyperlinkEnd, "blank");
+
+this.action = action;
+
+]]></method>
+                                <property name="resultSetColumn">rptdesign</property>
+                                <list-property name="action">
+                                    <structure>
+                                        <property name="linkType">none</property>
+                                    </structure>
+                                </list-property>
+                            </data>
+                        </cell>
+                    </row>
+                </header>
+            </group>
+            <detail>
+                <row id="49">
+                    <cell id="92"/>
+                    <cell id="50">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <data id="82">
+                            <property name="resultSetColumn">Explanation</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

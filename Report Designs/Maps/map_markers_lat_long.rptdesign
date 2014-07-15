@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/Workspace/runtime-EclipseApplicationDEV/FlightDelayApp/Data/flightRawData.datadesign">
+                <reference-elements>Data Source;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131206-0433 Build &lt;4.2.3.v20131206-0433></property>
+                    <list-property name="userProperties">
+                        <structure>
+                            <property name="name">18.airports.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.airports.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.carriers.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.carriers.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.flightdetails.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.flightdetails.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.carriers.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.carriers.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.airports.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.airports.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.flightdetails.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">18.flightdetails.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.airports.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.airports.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.carriers.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.carriers.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.flightdetails.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.flightdetails.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">102.airports.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">102.airports.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">102.carriers.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">102.carriers.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">102.flightdetails.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">102.flightdetails.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.flightdetails.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.flightdetails.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.airports.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">62.airports.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.airports.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.airports.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.carriers.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.carriers.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.flightdetails.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.flightdetails.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.flighdetails_join.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.flighdetails_join.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.flightdetails.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">108.flightdetails.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                    </list-property>
+                    <property name="18.airports.x">531</property>
+                    <property name="18.airports.y">313</property>
+                    <property name="18.carriers.x">614</property>
+                    <property name="18.carriers.y">91</property>
+                    <property name="18.flightdetails.x">72</property>
+                    <property name="18.flightdetails.y">126</property>
+                    <property name="18.carriers.width">150</property>
+                    <property name="18.carriers.height">200</property>
+                    <property name="18.airports.width">150</property>
+                    <property name="18.airports.height">200</property>
+                    <property name="18.flightdetails.width">150</property>
+                    <property name="18.flightdetails.height">200</property>
+                    <property name="62.airports.x">73</property>
+                    <property name="62.airports.y">135</property>
+                    <property name="62.carriers.x">180</property>
+                    <property name="62.carriers.y">10</property>
+                    <property name="62.flightdetails.x">391</property>
+                    <property name="62.flightdetails.y">132</property>
+                    <property name="102.airports.x">10</property>
+                    <property name="102.airports.y">10</property>
+                    <property name="102.carriers.x">180</property>
+                    <property name="102.carriers.y">10</property>
+                    <property name="102.flightdetails.x">10</property>
+                    <property name="102.flightdetails.y">230</property>
+                    <property name="62.flightdetails.width">150</property>
+                    <property name="62.flightdetails.height">200</property>
+                    <property name="62.airports.width">150</property>
+                    <property name="62.airports.height">200</property>
+                    <property name="108.airports.x">10</property>
+                    <property name="108.airports.y">10</property>
+                    <property name="108.carriers.x">180</property>
+                    <property name="108.carriers.y">10</property>
+                    <property name="108.flightdetails.x">238</property>
+                    <property name="108.flightdetails.y">11</property>
+                    <property name="108.flighdetails_join.x">180</property>
+                    <property name="108.flighdetails_join.y">230</property>
+                    <property name="108.flightdetails.width">150</property>
+                    <property name="108.flightdetails.height">200</property>
+                    <list-property name="propertyBindings">
+                        <structure>
+                            <property name="name">queryText</property>
+                            <property name="id">61</property>
+                        </structure>
+                    </list-property>
+                    <property name="enableIncrementalUpdate">true</property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="carriers" id="8">
+                            <property name="URI">Data/carriers.csv</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">NO</property>
+                            <property name="TRAILNULLCOLS">NO</property>
+                        </oda-data-source>
+                        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.excel" name="airports" id="13">
+                            <property name="URI">Data/airports.xlsx</property>
+                            <property name="INCLCOLUMNNAME">yes</property>
+                            <property name="INCLTYPELINE">no</property>
+                        </oda-data-source>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="flightdetails" id="60">
+                            <property name="URI">Data/airline_delay_causes.csv</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">NO</property>
+                            <property name="TRAILNULLCOLS">NO</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.excel.dataSet" name="airports" id="15">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">iata</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">iata</text-property>
+                                    <text-property name="heading">iata</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">dot</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">dot</text-property>
+                                    <text-property name="heading">dot</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">airport</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">airport</text-property>
+                                    <text-property name="heading">airport</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">city</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">city</text-property>
+                                    <text-property name="heading">city</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">state</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">state</text-property>
+                                    <text-property name="heading">state</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">country</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">country</text-property>
+                                    <text-property name="heading">country</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">lat</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">lat</text-property>
+                                    <text-property name="heading">lat</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">long</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">long</text-property>
+                                    <text-property name="heading">long</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">iata</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">dot</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">airport</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">city</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">state</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">country</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">lat</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">long</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">airports</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">iata</property>
+                                    <property name="nativeName">iata</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">dot</property>
+                                    <property name="nativeName">dot</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">airport</property>
+                                    <property name="nativeName">airport</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">city</property>
+                                    <property name="nativeName">city</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">state</property>
+                                    <property name="nativeName">state</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">country</property>
+                                    <property name="nativeName">country</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">lat</property>
+                                    <property name="nativeName">lat</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">long</property>
+                                    <property name="nativeName">long</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "iata", "dot", "airport", "city", "state", "country", "lat", "long" from "/C:/p4/Actuate/Project-Branches/1490-BIRTApplication/common/BIRT/SampleMobileApps/FlightDelayApp/Data/airports.xlsx" : {"iata","iata",STRING;"dot","dot",INT;"airport","airport",STRING;"city","city",STRING;"state","state",STRING;"country","country",STRING;"lat","lat",INT;"long","long",INT}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>iata</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>iata</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>iata</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>dot</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>dot</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>dot</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>airport</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>airport</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>airport</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>city</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>city</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>city</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>state</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>state</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>state</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>country</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>country</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>country</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lat</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>lat</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lat</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <property name="WORKSHEETS">Sheet1</property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="carriers" id="16">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Code</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Code</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Description</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Description</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Code</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Description</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">carriers</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Code</property>
+                                    <property name="nativeName">Code</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Description</property>
+                                    <property name="nativeName">Description</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Code", "Description" from "Data/carriers.csv" : {"Code","Code",STRING;"Description","Description",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Code</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Code</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Description</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Description</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="flightdetails" id="61">
+                            <list-property name="computedColumns">
+                                <structure>
+                                    <property name="name">arr_ontime</property>
+                                    <expression name="expression" type="javascript">row["arr_flights"] - row["arr_del15"]</expression>
+                                    <property name="dataType">integer</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">year</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">year</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">month</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">month</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">carrier</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">carrier</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">carrier_name</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">carrier_name</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">airport</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">airport</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">airport_name</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">airport_name</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">arr_flights</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">arr_flights</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">arr_del15</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">arr_del15</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">carrier_ct</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">carrier_ct</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">weather_ct</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">weather_ct</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">nas_ct</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">nas_ct</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">security_ct</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">security_ct</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">late_aircraft_ct</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">late_aircraft_ct</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">arr_cancelled</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">arr_cancelled</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">arr_diverted</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">arr_diverted</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">arr_delay</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">arr_delay</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">carrier_delay</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">carrier_delay</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">weather_delay</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">weather_delay</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">nas_delay</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">nas_delay</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">security_delay</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">security_delay</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">late_aircraft_delay</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">late_aircraft_delay</text-property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">arr_ontime</property>
+                                    <property name="analysis">measure</property>
+                                    <property name="horizontalAlign">right</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">year</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">month</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">carrier</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">carrier_name</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">airport</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">airport_name</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">arr_flights</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">arr_del15</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">carrier_ct</property>
+                                        <property name="dataType">decimal</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">weather_ct</property>
+                                        <property name="dataType">decimal</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">11</property>
+                                        <property name="name">nas_ct</property>
+                                        <property name="dataType">decimal</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">12</property>
+                                        <property name="name">security_ct</property>
+                                        <property name="dataType">decimal</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">13</property>
+                                        <property name="name">late_aircraft_ct</property>
+                                        <property name="dataType">decimal</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">14</property>
+                                        <property name="name">arr_cancelled</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">15</property>
+                                        <property name="name">arr_diverted</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">16</property>
+                                        <property name="name">arr_delay</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">17</property>
+                                        <property name="name">carrier_delay</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">18</property>
+                                        <property name="name">weather_delay</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">19</property>
+                                        <property name="name">nas_delay</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">20</property>
+                                        <property name="name">security_delay</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">21</property>
+                                        <property name="name">late_aircraft_delay</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">22</property>
+                                        <property name="name">arr_ontime</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">flightdetails</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">year</property>
+                                    <property name="nativeName">year</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">month</property>
+                                    <property name="nativeName">month</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">carrier</property>
+                                    <property name="nativeName">carrier</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">carrier_name</property>
+                                    <property name="nativeName">carrier_name</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">airport</property>
+                                    <property name="nativeName">airport</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">airport_name</property>
+                                    <property name="nativeName">airport_name</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">arr_flights</property>
+                                    <property name="nativeName">arr_flights</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">arr_del15</property>
+                                    <property name="nativeName">arr_del15</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">carrier_ct</property>
+                                    <property name="nativeName">carrier_ct</property>
+                                    <property name="dataType">decimal</property>
+                                    <property name="nativeDataType">2</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">weather_ct</property>
+                                    <property name="nativeName">weather_ct</property>
+                                    <property name="dataType">decimal</property>
+                                    <property name="nativeDataType">2</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">11</property>
+                                    <property name="name">nas_ct</property>
+                                    <property name="nativeName">nas_ct</property>
+                                    <property name="dataType">decimal</property>
+                                    <property name="nativeDataType">2</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">12</property>
+                                    <property name="name">security_ct</property>
+                                    <property name="nativeName">security_ct</property>
+                                    <property name="dataType">decimal</property>
+                                    <property name="nativeDataType">2</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">13</property>
+                                    <property name="name">late_aircraft_ct</property>
+                                    <property name="nativeName">late_aircraft_ct</property>
+                                    <property name="dataType">decimal</property>
+                                    <property name="nativeDataType">2</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">14</property>
+                                    <property name="name">arr_cancelled</property>
+                                    <property name="nativeName">arr_cancelled</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">15</property>
+                                    <property name="name">arr_diverted</property>
+                                    <property name="nativeName">arr_diverted</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">16</property>
+                                    <property name="name">arr_delay</property>
+                                    <property name="nativeName">arr_delay</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">17</property>
+                                    <property name="name">carrier_delay</property>
+                                    <property name="nativeName">carrier_delay</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">18</property>
+                                    <property name="name">weather_delay</property>
+                                    <property name="nativeName">weather_delay</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">19</property>
+                                    <property name="name">nas_delay</property>
+                                    <property name="nativeName">nas_delay</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">20</property>
+                                    <property name="name">security_delay</property>
+                                    <property name="nativeName">security_delay</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">21</property>
+                                    <property name="name">late_aircraft_delay</property>
+                                    <property name="nativeName">late_aircraft_delay</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "year", "month", "carrier", "carrier_name", "airport", "airport_name", "arr_flights", "arr_del15", "carrier_ct", "weather_ct", "nas_ct", "security_ct", "late_aircraft_ct", "arr_cancelled", "arr_diverted", "arr_delay", "carrier_delay", "weather_delay", "nas_delay", "security_delay", "late_aircraft_delay" from "Data/airline_delay_causes.csv" : {"year","year",INT;"month","month",INT;"carrier","carrier",STRING;"carrier_name","carrier_name",STRING;"airport","airport",STRING;"airport_name","airport_name",STRING;"arr_flights","arr_flights",INT;"arr_del15","arr_del15",INT;"carrier_ct","carrier_ct",BIGDECIMAL;"weather_ct","weather_ct",BIGDECIMAL;"nas_ct","nas_ct",BIGDECIMAL;"security_ct","security_ct",BIGDECIMAL;"late_aircraft_ct","late_aircraft_ct",BIGDECIMAL;"arr_cancelled","arr_cancelled",INT;"arr_diverted","arr_diverted",INT;"arr_delay","arr_delay",INT;"carrier_delay","carrier_delay",INT;"weather_delay","weather_delay",INT;"nas_delay","nas_delay",INT;"security_delay","security_delay",INT;"late_aircraft_delay","late_aircraft_delay",INT}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>year</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>year</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>month</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>month</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>carrier</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>carrier</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>carrier_name</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>carrier_name</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>airport</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>airport</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>airport_name</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>airport_name</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>arr_flights</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>arr_flights</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>arr_del15</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>arr_del15</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>carrier_ct</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>carrier_ct</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>weather_ct</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>weather_ct</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>nas_ct</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>nas_ct</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>security_ct</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>security_ct</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>late_aircraft_ct</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>late_aircraft_ct</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>arr_cancelled</design:name>
+              <design:position>14</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>arr_cancelled</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>arr_diverted</design:name>
+              <design:position>15</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>arr_diverted</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>arr_delay</design:name>
+              <design:position>16</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>arr_delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>carrier_delay</design:name>
+              <design:position>17</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>carrier_delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>weather_delay</design:name>
+              <design:position>18</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>weather_delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>nas_delay</design:name>
+              <design:position>19</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>nas_delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>security_delay</design:name>
+              <design:position>20</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>security_delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>late_aircraft_delay</design:name>
+              <design:position>21</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>late_aircraft_delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                    <property name="linkedDataModels">
+                        <linked-data-model name="flightDelays_DataModel" id="108">
+                            <property name="aliasDataSets">
+                                <alias-data-set name="airports" id="109">
+                                    <property name="originDataSet">airports</property>
+                                </alias-data-set>
+                                <alias-data-set name="flightdetails" id="123">
+                                    <property name="originDataSet">flightdetails</property>
+                                </alias-data-set>
+                            </property>
+                            <property name="columnLinks">
+                                <column-link id="178">
+                                    <structure name="leftColumn">
+                                        <property name="position">1</property>
+                                        <property name="name">iata</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure name="rightColumn">
+                                        <property name="position">5</property>
+                                        <property name="name">airport</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <property name="leftAliasDataSet">flightDelays_DataModel/airports</property>
+                                    <property name="rightAliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                    <property name="allowPushdown">false</property>
+                                </column-link>
+                            </property>
+                            <property name="categories">
+                                <category name="Category (airports)" id="110">
+                                    <property name="categoryColumns">
+                                        <category-column name="iata" id="111">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">iata</property>
+                                        </category-column>
+                                        <category-column name="dot" id="112">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">dot</property>
+                                        </category-column>
+                                        <category-column name="airport" id="113">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">airport</property>
+                                        </category-column>
+                                        <category-column name="city" id="114">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">city</property>
+                                        </category-column>
+                                        <category-column name="state" id="115">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">state</property>
+                                        </category-column>
+                                        <category-column name="country" id="116">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">country</property>
+                                        </category-column>
+                                        <category-column name="lat" id="117">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">lat</property>
+                                        </category-column>
+                                        <category-column name="long" id="118">
+                                            <property name="aliasDataSet">flightDelays_DataModel/airports</property>
+                                            <property name="resultSetColumnName">long</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                                <category name="Category (flightdetails)" id="124">
+                                    <property name="categoryColumns">
+                                        <category-column name="year" id="125">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">year</property>
+                                        </category-column>
+                                        <category-column name="month" id="126">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">month</property>
+                                        </category-column>
+                                        <category-column name="carrier" id="127">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">carrier</property>
+                                        </category-column>
+                                        <category-column name="carrier_name" id="128">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">carrier_name</property>
+                                        </category-column>
+                                        <category-column name="airport_name" id="130">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">airport_name</property>
+                                        </category-column>
+                                        <category-column name="arr_flights" id="131">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">arr_flights</property>
+                                        </category-column>
+                                        <category-column name="arr_del15" id="132">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">arr_del15</property>
+                                        </category-column>
+                                        <category-column name="carrier_ct" id="133">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">carrier_ct</property>
+                                        </category-column>
+                                        <category-column name="weather_ct" id="134">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">weather_ct</property>
+                                        </category-column>
+                                        <category-column name="nas_ct" id="135">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">nas_ct</property>
+                                        </category-column>
+                                        <category-column name="security_ct" id="136">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">security_ct</property>
+                                        </category-column>
+                                        <category-column name="late_aircraft_ct" id="137">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">late_aircraft_ct</property>
+                                        </category-column>
+                                        <category-column name="arr_cancelled" id="138">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">arr_cancelled</property>
+                                        </category-column>
+                                        <category-column name="arr_diverted" id="139">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">arr_diverted</property>
+                                        </category-column>
+                                        <category-column name="arr_delay" id="140">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">arr_delay</property>
+                                        </category-column>
+                                        <category-column name="carrier_delay" id="141">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">carrier_delay</property>
+                                        </category-column>
+                                        <category-column name="weather_delay" id="142">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">weather_delay</property>
+                                        </category-column>
+                                        <category-column name="nas_delay" id="143">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">nas_delay</property>
+                                        </category-column>
+                                        <category-column name="security_delay" id="144">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">security_delay</property>
+                                        </category-column>
+                                        <category-column name="late_aircraft_delay" id="145">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">late_aircraft_delay</property>
+                                        </category-column>
+                                        <category-column name="arr_ontime" id="146">
+                                            <property name="aliasDataSet">flightDelays_DataModel/flightdetails</property>
+                                            <property name="resultSetColumnName">arr_ontime</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                            </property>
+                            <property name="pushDown">true</property>
+                        </linked-data-model>
+                    </property>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <data-mart-data-source name="Data Source" id="7">
+            <property name="datamartURL">Data/flightRawData</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="flightDelays_DataModel" id="8">
+            <property name="dataSource">Data Source</property>
+            <property name="dataObject">flightDelays_DataModel</property>
+        </data-mart-linked-data-model>
+    </property>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="276">
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<script>
+locations = [];
+</script>]]></text-property>
+        </text>
+        <table id="186">
+            <property name="width">7.947916666666667in</property>
+            <property name="theme">ThemesReportItems3.Modern Table</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">iata</property>
+                    <text-property name="displayName">iata</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["iata"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">airport</property>
+                    <text-property name="displayName">airport</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["airport"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lat</property>
+                    <text-property name="displayName">lat</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lat"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">long</property>
+                    <text-property name="displayName">long</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["long"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">flightDelays_DataModel</property>
+            <column id="199">
+                <property name="width">1.59375in</property>
+            </column>
+            <column id="200">
+                <property name="width">3.1041666666666665in</property>
+            </column>
+            <column id="201">
+                <property name="width">1.3645833333333333in</property>
+            </column>
+            <column id="212">
+                <property name="width">1.65625in</property>
+            </column>
+            <column id="280">
+                <property name="width">1.65625in</property>
+            </column>
+            <column id="218">
+                <property name="width">0.22916666666666666in</property>
+            </column>
+            <header>
+                <row id="187">
+                    <cell id="188">
+                        <label id="202">
+                            <text-property name="text">iata</text-property>
+                        </label>
+                    </cell>
+                    <cell id="189">
+                        <label id="204">
+                            <text-property name="text">airport</text-property>
+                        </label>
+                    </cell>
+                    <cell id="190">
+                        <label id="206">
+                            <text-property name="text">lat</text-property>
+                        </label>
+                    </cell>
+                    <cell id="209">
+                        <label id="213">
+                            <text-property name="text">long</text-property>
+                        </label>
+                    </cell>
+                    <cell id="277"/>
+                    <cell id="215"/>
+                </row>
+            </header>
+            <detail>
+                <row id="191">
+                    <cell id="192">
+                        <data id="203">
+                            <property name="resultSetColumn">iata</property>
+                        </data>
+                    </cell>
+                    <cell id="193">
+                        <data id="205">
+                            <property name="resultSetColumn">airport</property>
+                        </data>
+                    </cell>
+                    <cell id="194">
+                        <data id="207">
+                            <property name="resultSetColumn">lat</property>
+                        </data>
+                    </cell>
+                    <cell id="210">
+                        <data id="214">
+                            <property name="resultSetColumn">long</property>
+                        </data>
+                    </cell>
+                    <cell id="278"/>
+                    <cell id="216">
+                        <text id="219">
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<script>locations.push([
+<value-of>row["lat"]</value-of>, 
+<value-of>row["long"]</value-of>,
+"<value-of>row["airport"]</value-of>"
+]);</script>]]></text-property>
+                        </text>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="195">
+                    <cell id="196"/>
+                    <cell id="197"/>
+                    <cell id="198"/>
+                    <cell id="211"/>
+                    <cell id="279"/>
+                    <cell id="217"/>
+                </row>
+            </footer>
+        </table>
+        <extended-item extensionName="Map" id="226">
+            <xml-property name="xmlRepresentation"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<Maps:MapModel xmlns:Maps="http://www.birt.actuate.com/Maps">
+  <Maps:Type>USA (States)</Maps:Type>
+  <Maps:AreaDefinition>
+    <Maps:Border/>
+  </Maps:AreaDefinition>
+  <Maps:MapDefinition>
+    <Maps:ShowLabels>false</Maps:ShowLabels>
+    <Maps:Border>
+      <Style>Solid</Style>
+      <Thickness>1</Thickness>
+      <Color>
+        <Transparency>255</Transparency>
+        <Red>192</Red>
+        <Green>192</Green>
+        <Blue>192</Blue>
+      </Color>
+      <Visible>true</Visible>
+    </Maps:Border>
+    <Maps:Background>
+      <Transparency>255</Transparency>
+      <Red>221</Red>
+      <Green>221</Green>
+      <Blue>221</Blue>
+    </Maps:Background>
+    <Maps:UseHoverColor>false</Maps:UseHoverColor>
+    <Maps:HoverColor>
+      <Transparency>0</Transparency>
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>255</Blue>
+    </Maps:HoverColor>
+    <Maps:EntityQuery>
+      <Definition>row[&quot;state&quot;]</Definition>
+      <Grouping>
+        <Enabled>true</Enabled>
+        <GroupType>Text</GroupType>
+        <AggregateExpression>Sum</AggregateExpression>
+      </Grouping>
+    </Maps:EntityQuery>
+    <Maps:ValueQuery>
+      <Definition>1</Definition>
+      <Grouping>
+        <GroupType>Text</GroupType>
+        <AggregateExpression>Sum</AggregateExpression>
+      </Grouping>
+    </Maps:ValueQuery>
+  </Maps:MapDefinition>
+  <Maps:LegendDefinition/>
+  <Maps:FormatDefinition>
+    <Maps:DecimalNumber>2</Maps:DecimalNumber>
+  </Maps:FormatDefinition>
+  <Maps:BaseFontDefinition>
+    <Value></Value>
+    <Font>
+      <Name>Tahoma</Name>
+      <Size>0.0</Size>
+      <Alignment/>
+    </Font>
+  </Maps:BaseFontDefinition>
+  <Maps:Data>
+    <Maps:ID>AZ</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>CA</Maps:ID>
+    <Maps:Value>2.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>CO</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>FL</Maps:ID>
+    <Maps:Value>2.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>GA</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>IL</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>MA</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>MI</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>MN</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>NC</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>NV</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>NY</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>PA</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>TX</Maps:ID>
+    <Maps:Value>2.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>UT</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>VA</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:Data>
+    <Maps:ID>WA</Maps:ID>
+    <Maps:Value>1.0</Maps:Value>
+  </Maps:Data>
+  <Maps:ColorRange>
+    <Maps:Color>
+      <Transparency>255</Transparency>
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>255</Blue>
+    </Maps:Color>
+  </Maps:ColorRange>
+  <Maps:Script>/**&#xD;
+ * Called to change markers.&#xD;
+ *&#xD;
+ * @param markers&#xD;
+ *            markers options&#xD;
+ */&#xD;
+handleMarkers: function(markers){&#xD;
+for(var i in locations)&#xD;
+{&#xD;
+    var a = locations[i];&#xD;
+    var x = (a[1]*1+112.008)*(673.51-163.79)/(-71.0051+112.008)+163.79;&#xD;
+    var y = (a[0]*1-33.43417)*(133.5-265.98)/(42.36435-33.43417)+265.98;&#xD;
+    markers.definition.push({id: a[2], x: x, y: y, label: a[2]});	&#xD;
+    markers.application.push( {id: a[2], shapeid: 'circle'});&#xD;
+}&#xD;
+},</Maps:Script>
+</Maps:MapModel>
+]]></xml-property>
+            <property name="inheritColumns">true</property>
+            <property name="height">4.25in</property>
+            <property name="width">7.958333333333333in</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">state</property>
+                    <expression name="expression" type="javascript">dataSetRow["state"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">flightDelays_DataModel</property>
+        </extended-item>
+    </body>
+</report>

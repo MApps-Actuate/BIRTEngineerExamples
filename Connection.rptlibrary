@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/Users/mgamble/workspace/CorpOnlineBanking/Data%20Objects/TreasuryData.data">
+                <reference-elements>BDO;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="FF" id="2">
+                            <property name="HOME">Data/</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">YES</property>
+                            <property name="TRAILNULLCOLS">NO</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Balance" id="3">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Cat1</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Cat1</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Cat2</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Cat2</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Cat3</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Cat3</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Val1</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Val1</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Val2</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Val2</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Cat1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Cat2</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Cat3</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Val1</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Val2</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">FF</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Cat1</property>
+                                    <property name="nativeName">Cat1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Cat2</property>
+                                    <property name="nativeName">Cat2</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Cat3</property>
+                                    <property name="nativeName">Cat3</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Val1</property>
+                                    <property name="nativeName">Val1</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Val2</property>
+                                    <property name="nativeName">Val2</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Cat1", "Cat2", "Cat3", "Val1", "Val2" from "Balance_en_US.csv" : {"Cat1","Cat1",STRING;"Cat2","Cat2",STRING;"Cat3","Cat3",STRING;"Val1","Val1",DOUBLE;"Val2","Val2",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Cat1</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Cat1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Cat2</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Cat2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Cat3</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Cat3</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Val1</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Val1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Val2</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Val2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="theme">defaultTheme</property>
+    <data-sources>
+        <data-mart-data-source name="BDO" id="59">
+            <property name="datamartURL">Data Objects/TreasuryData</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="FF" id="61">
+            <property name="HOME">Data/</property>
+            <property name="DELIMTYPE">COMMA</property>
+            <property name="CHARSET">UTF-8</property>
+            <property name="INCLCOLUMNNAME">YES</property>
+            <property name="INCLTYPELINE">YES</property>
+            <property name="TRAILNULLCOLS">NO</property>
+        </oda-data-source>
+    </data-sources>
+    <themes>
+        <theme name="defaultTheme" id="4"/>
+    </themes>
+    <components>
+        <text name="launchDataGenerator" id="57">
+            <method name="onCreate"><![CDATA[var tmpstr = globalCsvLocation.replace('\\','/');
+this.text = "<script>function launchDataGenerator(){window.open('" + tmpstr + "/Bullets1_" + reportContext.getLocale() + ".xls');}</script>";]]></method>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[This gets replaced with script.  Click the Script tab to view.]]></text-property>
+        </text>
+    </components>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3">
+            <property name="topMargin">1in</property>
+            <property name="leftMargin">1.25in</property>
+            <property name="bottomMargin">1in</property>
+            <property name="rightMargin">1.25in</property>
+        </simple-master-page>
+    </page-setup>
+</library>
