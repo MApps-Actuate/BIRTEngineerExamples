@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="NewParameter" id="12">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">aaaaaaa</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="com.actuate.data.oda.static" name="Static Data Source" id="13"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Static Data Set" id="14">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">theDateTime</property>
+                    <expression name="expression" type="javascript">BirtDateTime.addSecond(new Date(),25200-(row["Counter"]))</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">someMeasurement</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">someMeasurement</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">someMeasurement</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">theDateTime2</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">theDateTime2</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">theDateTime2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Counter</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Counter</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Counter</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">theDateTime</property>
+                    <property name="analysis">dimension</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">someMeasurement</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">theDateTime2</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Counter</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">theDateTime</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Static Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">someMeasurement</property>
+                    <property name="nativeName">someMeasurement</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">theDateTime2</property>
+                    <property name="nativeName">theDateTime2</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Counter</property>
+                    <property name="nativeName">Counter</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[{"Columns":["someMeasurement","theDateTime2","Counter"],"Types":[5,8,3]}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>someMeasurement</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>someMeasurement</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>someMeasurement</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>someDateTime</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>someDateTime</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>someDateTime</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>DATA</name>
+                    <value>[[".4","2014-05-20 12:00:00.000","4"],[".2","2014-05-20 12:00:01.000","3"],[".75","2014-05-20 12:00:02.000","2"],[".5","2014-05-20 12:00:03.000","1"],[".4",null,"0"],[".8",null,"1"]]</value>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Chart" id="9">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Line Chart" subType="Overlay" units="Points" seriesThickness="10.0" unitSpacing="50.0" reverseCategory="false">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block row="-1" column="-1" rowspan="-1" columnspan="-1" visible="true">
+   <children _type="TitleBlock" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="false" auto="false">
+    <bounds _body="0.0,0.0,0.0,0.0"/>
+    <insets _body="3.0,3.0,3.0,3.0"/>
+    <outline style="0" thickness="1" visible="false">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <label visible="true">
+     <caption value="Line Chart Title">
+      <font size="16.0" bold="true">
+       <alignment _body="1,1"/>
+      </font>
+     </caption>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </label>
+   </children>
+   <children _type="Plot" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="true" horizontalSpacing="5" verticalSpacing="5">
+    <bounds _body="0.0,0.0,0.0,0.0"/>
+    <insets _body="3.0,3.0,3.0,3.0"/>
+    <outline style="0" thickness="1" visible="false">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <clientArea>
+     <outline style="0" thickness="0" visible="false">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,0.0,0.0,0.0"/>
+    </clientArea>
+   </children>
+   <children _type="Legend" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="false" orientation="1" direction="1" position="3" itemType="0" titlePosition="0">
+    <bounds _body="0.0,0.0,0.0,0.0"/>
+    <insets _body="3.0,3.0,3.0,3.0"/>
+    <outline style="0" thickness="1" visible="false">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <triggers condition="2">
+     <action type="4">
+      <value _type="SeriesValue" name=""/>
+     </action>
+    </triggers>
+    <clientArea>
+     <outline style="0" thickness="0" visible="false">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="2.0,2.0,2.0,2.0"/>
+    </clientArea>
+    <text value=""/>
+    <separator style="0" thickness="1" visible="true">
+     <color _body=",255,0,0,0"/>
+    </separator>
+    <title visible="false">
+     <caption value=""/>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1" visible="false">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="3.0,3.0,3.0,3.0"/>
+   <outline style="0" thickness="1" visible="false">
+    <color _body=",255,0,0,0"/>
+   </outline>
+   <triggers condition="15">
+    <action type="3">
+     <value _type="ScriptValue" script="// set up the updating of the chart each second&#13;&#10;&#13;&#10;var series = this.series[0];&#13;&#10;&#13;&#10;setInterval(function() {&#13;&#10; var x = (new Date()).getTime();&#13;&#10;  y = Math.random();&#13;&#10;  series.addPoint([x, y], true, true);&#13;&#10;}, 1000);"/>
+    </action>
+   </triggers>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="jschart.client.script" value=""/>
+  <extendedProperties name="jschart.animation" value="false"/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000,03/12/2000,02/29/2000"/>
+   <orthogonalSampleData dataSetRepresentation="6,4,12,8,10" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage visible="false">
+   <caption value="This chart contains no data.">
+    <font>
+     <alignment _body="1,1"/>
+    </font>
+   </caption>
+   <background _body=",64,127,127,127"/>
+   <outline visible="true">
+    <color _body=",128,127,127,127"/>
+   </outline>
+   <insets _body="10.0,10.0,10.0,10.0"/>
+  </emptyMessage>
+  <axes type="3" titlePosition="1" orientation="0" labelPosition="1" primaryAxis="true" categoryAxis="false" percent="false">
+   <title visible="false">
+    <caption value="X-Axis Title">
+     <font size="14.0" bold="true">
+      <alignment _body="1,1"/>
+     </font>
+    </caption>
+    <background _body=",0,255,255,255"/>
+    <outline style="0" thickness="1">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <insets _body="0.0,2.0,0.0,3.0"/>
+   </title>
+   <associatedAxes type="0" titlePosition="2" orientation="1" labelPosition="2" primaryAxis="true" percent="false">
+    <title visible="false">
+     <caption value="Y-Axis Title">
+      <font size="14.0" bold="true">
+       <alignment _body="1,1"/>
+      </font>
+     </caption>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,80,166,218"/>
+      <entries _body=",255,242,88,106"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" visible="true" seriesIdentifier="Series 1" labelPosition="0" stacked="false" curve="true">
+      <label visible="false">
+       <caption value=""/>
+       <background _body=",0,255,255,255"/>
+       <outline style="0" thickness="1" visible="false">
+        <color _body=",255,0,0,0"/>
+       </outline>
+       <insets _body="0.0,2.0,0.0,3.0"/>
+      </label>
+      <dataDefinition definition="row[&quot;someMeasurement&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes thickness="2">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,145,145,145"/>
+    </lineAttributes>
+    <label visible="true">
+     <caption value="">
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,145,145,145"/>
+     </caption>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </label>
+    <majorGrid tickStyle="4">
+     <lineAttributes style="0" thickness="1" visible="true">
+      <color _body=",255,228,228,228"/>
+     </lineAttributes>
+     <tickAttributes style="0" thickness="1" visible="false">
+      <color _body=",255,196,196,196"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid tickStyle="4">
+     <lineAttributes style="0" thickness="1" visible="false">
+      <color _body=",255,225,225,225"/>
+     </lineAttributes>
+     <tickAttributes style="0" thickness="1" visible="false">
+      <color _body=",255,225,225,225"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale minorGridsPerUnit="5"/>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,80,166,218"/>
+     <entries _body=",255,242,88,106"/>
+     <entries _body=",255,232,172,57"/>
+     <entries _body=",255,128,255,128"/>
+     <entries _body=",255,64,128,128"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,170,85,85"/>
+     <entries _body=",255,128,128,0"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series visible="true" seriesIdentifier="" labelPosition="5" stacked="false">
+     <label visible="false">
+      <caption value=""/>
+      <background _body=",0,255,255,255"/>
+      <outline style="0" thickness="1" visible="false">
+       <color _body=",255,0,0,0"/>
+      </outline>
+      <insets _body="0.0,2.0,0.0,3.0"/>
+     </label>
+     <dataDefinition definition="row[&quot;theDateTime&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupingUnit="0" groupType="1"/>
+    <sortKey/>
+   </seriesDefinitions>
+   <lineAttributes style="0" thickness="1" visible="true">
+    <color _body=",255,145,145,145"/>
+   </lineAttributes>
+   <label visible="true">
+    <caption value="">
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,145,145,145"/>
+    </caption>
+    <background _body=",0,255,255,255"/>
+    <outline style="0" thickness="1">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <insets _body="0.0,2.0,0.0,3.0"/>
+   </label>
+   <triggers condition="2">
+    <action type="0">
+     <value _type="MultiURLValues">
+      <uRLValues baseUrl="&lt;structure&gt;&#10;    &lt;property name=&quot;linkType&quot;&gt;hyperlink&lt;/property&gt;&#10;    &lt;expression name=&quot;uri&quot; type=&quot;constant&quot;&gt;http://google.com&lt;/expression&gt;&#10;    &lt;property name=&quot;targetWindow&quot;&gt;_blank&lt;/property&gt;&#10;&lt;/structure&gt;&#10;" baseParameterName="" valueParameterName="" seriesParameterName="">
+       <label>
+        <caption value="Test"/>
+       </label>
+      </uRLValues>
+      <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
+      <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
+      <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
+      <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
+     </value>
+    </action>
+   </triggers>
+   <majorGrid tickStyle="4">
+    <lineAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,196,196,196"/>
+    </lineAttributes>
+    <tickAttributes style="0" thickness="1" visible="true">
+     <color _body=",255,196,196,196"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid tickStyle="4">
+    <lineAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,225,225,225"/>
+    </lineAttributes>
+    <tickAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,225,225,225"/>
+    </tickAttributes>
+   </minorGrid>
+   <scale minorGridsPerUnit="5"/>
+   <origin type="2">
+    <value _type="NumberDataElement" value="0.0"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles xAngle="-20.0" yAngle="45.0" zAngle="0.0" type="0"/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <list-property name="action">
+                <structure>
+                    <property name="targetWindow">_blank</property>
+                    <property name="linkType">hyperlink</property>
+                    <expression name="uri" type="constant">http://google.com</expression>
+                </structure>
+            </list-property>
+            <property name="inheritColumns">true</property>
+            <property name="height">3.9791666666666665in</property>
+            <property name="width">7.958333333333333in</property>
+            <property name="dataSet">Static Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">someMeasurement</property>
+                    <text-property name="displayName">someMeasurement</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["someMeasurement"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">theDateTime2</property>
+                    <text-property name="displayName">theDateTime2</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theDateTime2"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">theDateTime</property>
+                    <text-property name="displayName">theDateTime</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theDateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+            </list-property>
+        </extended-item>
+    </body>
+</report>
