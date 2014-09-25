@@ -13,7 +13,7 @@ $(document).ready(function(){
 	actuate.initialize(url ,reqOps, user, pass, function() {
 		var viewer = new actuate.Viewer("viewerDiv");
 		viewer.setReportName(demoProps.reportName);			
-		viewer.setSize($(document).height() - 4,$(document).width() - 4 );
+		viewer.setSize($(document).height(),$(document).width()+5);
 
 		viewer.submit();			
 	});		

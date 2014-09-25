@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="units">in</property>
+    <method name="beforeFactory"><![CDATA[var pStateName = 'Ohio'
+var map = reportContext.getDesignHandle().findElement("StateMap")
+var xml = map.getProperty("xmlRepresentation");
+
+var start = xml.indexOf("<Maps:Type>") + 11;
+var end = xml.indexOf("</Maps:Type>");
+
+switch (params["pState"].value)
+{
+case (params["pState"].value = "AL"): pStateName = "Alabama"; break
+case (params["pState"].value = "AK"): pStateName = "Alaska"; break
+case (params["pState"].value = "AZ"): pStateName = "Arizona"; break
+case (params["pState"].value = "AR"): pStateName = "Arkansas"; break
+case (params["pState"].value = "CA"): pStateName = "California"; break
+case (params["pState"].value = "CO"): pStateName = "Colorado"; break
+case (params["pState"].value = "CT"): pStateName = "Connecticut"; break
+case (params["pState"].value = "DE"): pStateName = "Delaware"; break
+case (params["pState"].value = "DC"): pStateName = "District of Columbia"; break
+case (params["pState"].value = "FL"): pStateName = "Florida"; break
+case (params["pState"].value = "GA"): pStateName = "Georgia"; break
+case (params["pState"].value = "HI"): pStateName = "Hawaii"; break
+case (params["pState"].value = "ID"): pStateName = "Idaho"; break
+case (params["pState"].value = "IL"): pStateName = "Illinois"; break
+case (params["pState"].value = "IN"): pStateName = "Indiana"; break
+case (params["pState"].value = "IA"): pStateName = "Iowa"; break
+case (params["pState"].value = "KS"): pStateName = "Kansas"; break
+case (params["pState"].value = "KY"): pStateName = "Kentucky"; break
+case (params["pState"].value = "LA"): pStateName = "Louisiana"; break
+case (params["pState"].value = "ME"): pStateName = "Maine"; break
+case (params["pState"].value = "MD"): pStateName = "Maryland"; break
+case (params["pState"].value = "MA"): pStateName = "Massachusetts"; break
+case (params["pState"].value = "MI"): pStateName = "Michigan"; break
+case (params["pState"].value = "MN"): pStateName = "Minnesota"; break
+case (params["pState"].value = "MS"): pStateName = "Mississippi";break
+case (params["pState"].value = "MO"): pStateName = "Missouri"; break
+case (params["pState"].value = "MT"): pStateName = "Montana"; break
+case (params["pState"].value = "NE"): pStateName = "Nebraska"; break
+case (params["pState"].value = "NV"): pStateName = "Nevada"; break
+case (params["pState"].value = "NH"): pStateName = "New Hampshire"; break
+case (params["pState"].value = "NJ"): pStateName = "New Jersey"; break
+case (params["pState"].value = "NM"): pStateName = "New Mexico"; break
+case (params["pState"].value = "NY"): pStateName = "New York"; break
+case (params["pState"].value = "NC"): pStateName = "North Carolina"; break
+case (params["pState"].value = "ND"): pStateName = "North Dakota";break
+case (params["pState"].value = "OH"): pStateName = "Ohio"; break
+case (params["pState"].value = "OK"): pStateName = "Oklahoma"; break
+case (params["pState"].value = "OR"): pStateName = "Oregon"; break
+case (params["pState"].value = "PA"): pStateName = "Pennsylvania"; break
+case (params["pState"].value = "RI"): pStateName = "Rhode Island"; break
+case (params["pState"].value = "SC"): pStateName = "South Carolina"; break
+case (params["pState"].value = "SD"): pStateName = "South Dakota"; break
+case (params["pState"].value = "TN"): pStateName = "Tennessee"; break
+case (params["pState"].value = "TX"): pStateName = "Texas"; break
+case (params["pState"].value = "UT"): pStateName = "Utah"; break
+case (params["pState"].value = "VT"): pStateName = "Vermont"; break
+case (params["pState"].value = "VA"): pStateName = "Virginia"; break
+case (params["pState"].value = "WA"): pStateName = "Washington"; break
+case (params["pState"].value = "WY"): pStateName = "Wyoming"; break
+}
+
+var newXml = xml.substring(0, start);
+newXml += pStateName;
+newXml += xml.substring(end);
+
+map.setProperty("xmlRepresentation", newXml);]]></method>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="pState" id="92">
+            <text-property name="promptText">State:</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">States</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["state"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["state"]</expression>
+            <expression name="sortByColumn">dataSetRow["state"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">CA</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="FlatFile County Populations" id="128">
+            <property name="HOME">Data/</property>
+            <property name="DELIMTYPE">COMMA</property>
+            <property name="CHARSET">UTF-8</property>
+            <property name="INCLCOLUMNNAME">YES</property>
+            <property name="INCLTYPELINE">NO</property>
+            <property name="TRAILNULLCOLS">NO</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="County Populations Data Set" id="129">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">state</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">state</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">County2</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">County2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">pop</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">pop</text-property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["state"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pState"].value</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">state</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">County2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">pop</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">FlatFile County Populations</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">state</property>
+                    <property name="nativeName">state</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">County2</property>
+                    <property name="nativeName">County2</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">pop</property>
+                    <property name="nativeName">pop</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select "state", "County2", "pop" from "CountyPopulations.csv" : {"state","state",STRING;"County2","County2",STRING;"pop","pop",DOUBLE}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>state</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>state</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>County2</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>County2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>pop</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>pop</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="States" id="130">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">state</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">state</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">state</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">FlatFile County Populations</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">state</property>
+                    <property name="nativeName">state</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select "state" from "CountyPopulations.csv" : {"state","state",STRING}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>state</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>state</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="93">
+            <property name="height">7.302083333333333in</property>
+            <property name="width">9.75in</property>
+            <column id="94">
+                <property name="width">7.46875in</property>
+            </column>
+            <column id="95">
+                <property name="width">3.0104166666666665in</property>
+            </column>
+            <row id="96">
+                <property name="height">7.302083333333333in</property>
+                <cell id="97">
+                    <extended-item extensionName="Map" name="StateMap" id="9">
+                        <xml-property name="xmlRepresentation"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<Maps:MapModel xmlns:Maps="http://www.birt.actuate.com/Maps">
+  <Maps:Type>California</Maps:Type>
+  <Maps:AreaDefinition>
+    <Maps:Border/>
+  </Maps:AreaDefinition>
+  <Maps:MapDefinition>
+    <Maps:IncludeNameInLabels>true</Maps:IncludeNameInLabels>
+    <Maps:IncludeValueInLabels>false</Maps:IncludeValueInLabels>
+    <Maps:Border>
+      <Style>Solid</Style>
+      <Thickness>1</Thickness>
+      <Color>
+        <Transparency>255</Transparency>
+        <Red>192</Red>
+        <Green>192</Green>
+        <Blue>192</Blue>
+      </Color>
+      <Visible>true</Visible>
+    </Maps:Border>
+    <Maps:Background>
+      <Transparency>255</Transparency>
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>255</Blue>
+    </Maps:Background>
+    <Maps:UseHoverColor>true</Maps:UseHoverColor>
+    <Maps:HoverColor>
+      <Transparency>0</Transparency>
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>255</Blue>
+    </Maps:HoverColor>
+    <Maps:EntityQuery>
+      <Definition>row[&quot;County2&quot;]</Definition>
+      <Grouping>
+        <Enabled>true</Enabled>
+        <GroupType>Text</GroupType>
+        <AggregateExpression>Sum</AggregateExpression>
+      </Grouping>
+    </Maps:EntityQuery>
+    <Maps:ValueQuery>
+      <Definition>row[&quot;pop&quot;]</Definition>
+      <Grouping>
+        <GroupType>Text</GroupType>
+        <AggregateExpression>Sum</AggregateExpression>
+      </Grouping>
+    </Maps:ValueQuery>
+    <Maps:Tooltip>
+      <Text></Text>
+      <Delay>200</Delay>
+    </Maps:Tooltip>
+    <Maps:Hyperlink>
+      <BaseUrl></BaseUrl>
+      <Target></Target>
+      <BaseParameterName></BaseParameterName>
+      <ValueParameterName></ValueParameterName>
+    </Maps:Hyperlink>
+    <Maps:InvokeScript>
+      <Script></Script>
+    </Maps:InvokeScript>
+  </Maps:MapDefinition>
+  <Maps:LegendDefinition>
+    <Maps:Position>Right</Maps:Position>
+  </Maps:LegendDefinition>
+  <Maps:FormatDefinition>
+    <Maps:formatNumberScale>false</Maps:formatNumberScale>
+    <Maps:DecimalNumber>2</Maps:DecimalNumber>
+  </Maps:FormatDefinition>
+  <Maps:BaseFontDefinition>
+    <Value></Value>
+    <Font>
+      <Name>Tahoma</Name>
+      <Alignment/>
+    </Font>
+    <Color>
+      <Transparency>255</Transparency>
+      <Red>85</Red>
+      <Green>85</Green>
+      <Blue>85</Blue>
+    </Color>
+  </Maps:BaseFontDefinition>
+  <Maps:ColorRange>
+    <Maps:Elements>
+      <Maps:MaxValue>100000.0</Maps:MaxValue>
+      <Maps:DisplayValue></Maps:DisplayValue>
+      <Maps:Color>
+        <Transparency>255</Transparency>
+        <Red>0</Red>
+        <Green>204</Green>
+        <Blue>255</Blue>
+      </Maps:Color>
+    </Maps:Elements>
+    <Maps:Elements>
+      <Maps:MinValue>100000.0</Maps:MinValue>
+      <Maps:MaxValue>500000.0</Maps:MaxValue>
+      <Maps:DisplayValue></Maps:DisplayValue>
+      <Maps:Color>
+        <Transparency>255</Transparency>
+        <Red>51</Red>
+        <Green>102</Green>
+        <Blue>255</Blue>
+      </Maps:Color>
+    </Maps:Elements>
+    <Maps:Elements>
+      <Maps:MinValue>500000.0</Maps:MinValue>
+      <Maps:MaxValue>1000000.0</Maps:MaxValue>
+      <Maps:DisplayValue></Maps:DisplayValue>
+      <Maps:Color>
+        <Transparency>255</Transparency>
+        <Red>0</Red>
+        <Green>0</Green>
+        <Blue>255</Blue>
+      </Maps:Color>
+    </Maps:Elements>
+    <Maps:Elements>
+      <Maps:MinValue>1000000.0</Maps:MinValue>
+      <Maps:MaxValue>9000000.0</Maps:MaxValue>
+      <Maps:DisplayValue></Maps:DisplayValue>
+      <Maps:Color>
+        <Transparency>255</Transparency>
+        <Red>0</Red>
+        <Green>0</Green>
+        <Blue>128</Blue>
+      </Maps:Color>
+    </Maps:Elements>
+    <Maps:Gradient>true</Maps:Gradient>
+    <Maps:Color>
+      <Transparency>255</Transparency>
+      <Red>153</Red>
+      <Green>204</Green>
+      <Blue>255</Blue>
+    </Maps:Color>
+    <Maps:StartLabel></Maps:StartLabel>
+  </Maps:ColorRange>
+</Maps:MapModel>
+]]></xml-property>
+                        <property name="inheritColumns">true</property>
+                        <property name="height">320.25pt</property>
+                        <property name="width">7.322916666666667in</property>
+                        <property name="dataSet">County Populations Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">state</property>
+                                <expression name="expression" type="javascript">dataSetRow["state"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">County2</property>
+                                <expression name="expression" type="javascript">dataSetRow["County2"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">pop</property>
+                                <expression name="expression" type="javascript">dataSetRow["pop"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                    </extended-item>
+                </cell>
+                <cell id="98">
+                    <table id="99">
+                        <list-property name="userProperties">
+                            <structure>
+                                <property name="name">__ac_group_collapse_level</property>
+                                <property name="type">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="width">2.5520833333333335in</property>
+                        <property name="dataSet">County Populations Data Set</property>
+                        <property name="theme">ThemesReportItems3.Modern Table</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">County</property>
+                                <text-property name="displayName">County</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["County2"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">pop</property>
+                                <text-property name="displayName">pop</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["pop"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">TotPop</property>
+                                <property name="dataType">float</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>County</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">SUM</property>
+                                <list-property name="arguments">
+                                    <structure>
+                                        <property name="name">Expression</property>
+                                        <expression name="value" type="javascript">row["pop"]</expression>
+                                    </structure>
+                                </list-property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">County2</property>
+                                <text-property name="displayName">County2</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["County2"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PopTot</property>
+                                <property name="dataType">float</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>County</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">SUM</property>
+                                <list-property name="arguments">
+                                    <structure>
+                                        <property name="name">Expression</property>
+                                        <expression name="value" type="javascript">row["pop"]</expression>
+                                    </structure>
+                                </list-property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">state</property>
+                                <text-property name="displayName">state</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["state"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <list-property name="sort">
+                            <structure>
+                                <expression name="key" type="javascript">row["County"]</expression>
+                                <property name="direction">asc</property>
+                                <property name="strength">-1</property>
+                            </structure>
+                        </list-property>
+                        <column id="109">
+                            <property name="width">1.3229166666666667in</property>
+                        </column>
+                        <column id="110">
+                            <property name="width">1.2291666666666667in</property>
+                        </column>
+                        <header>
+                            <row id="100">
+                                <cell id="101">
+                                    <label id="111">
+                                        <text-property name="text">County</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="102">
+                                    <label id="113">
+                                        <text-property name="text">Population</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <group id="115">
+                            <property name="groupName">County</property>
+                            <expression name="keyExpr" type="javascript">row["County2"]</expression>
+                            <structure name="toc">
+                                <expression name="expressionValue" type="javascript">row["County2"]</expression>
+                            </structure>
+                            <property name="hideDetail">false</property>
+                            <list-property name="sort">
+                                <structure>
+                                    <expression name="key" type="javascript">row["County"]</expression>
+                                    <property name="direction">asc</property>
+                                    <property name="strength">-1</property>
+                                </structure>
+                            </list-property>
+                            <header>
+                                <row id="116">
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr" type="javascript">true</expression>
+                                        </structure>
+                                    </list-property>
+                                    <cell id="117"/>
+                                    <cell id="118"/>
+                                </row>
+                            </header>
+                            <footer>
+                                <row id="119">
+                                    <cell id="120">
+                                        <data id="126">
+                                            <property name="resultSetColumn">County2</property>
+                                        </data>
+                                    </cell>
+                                    <cell id="121">
+                                        <data id="127">
+                                            <structure name="numberFormat">
+                                                <property name="category">Fixed</property>
+                                                <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                                            </structure>
+                                            <property name="textAlign">right</property>
+                                            <property name="resultSetColumn">PopTot</property>
+                                        </data>
+                                    </cell>
+                                </row>
+                            </footer>
+                        </group>
+                        <detail>
+                            <row id="103">
+                                <list-property name="visibility">
+                                    <structure>
+                                        <property name="format">all</property>
+                                        <expression name="valueExpr" type="javascript">true</expression>
+                                    </structure>
+                                </list-property>
+                                <cell id="104">
+                                    <data id="125">
+                                        <property name="resultSetColumn">County2</property>
+                                    </data>
+                                </cell>
+                                <cell id="105">
+                                    <data id="114">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                                        </structure>
+                                        <property name="textAlign">right</property>
+                                        <property name="resultSetColumn">pop</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="106">
+                                <property name="height">0.23958333333333334in</property>
+                                <cell id="107"/>
+                                <cell id="108"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>
