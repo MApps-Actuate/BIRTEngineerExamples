@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.7.0.v201707031807</property>
+    <property name="units">in</property>
+    <property name="theme">ThemesReportItems31.Modern</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+    </list-property>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <property name="headerHeight">0.1in</property>
+            <property name="footerHeight">0.1in</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="28">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">24pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">#707070</property>
+            <property name="paddingLeft">10pt</property>
+            <property name="paddingBottom">3pt</property>
+            <text-property name="text">iHub Custom Viz - FoamTree</text-property>
+        </label>
+        <label id="39">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="fontStyle">italic</property>
+            <property name="color">#707070</property>
+            <property name="paddingLeft">10pt</property>
+            <property name="paddingBottom">2pt</property>
+            <text-property name="text">http://get.carrotsearch.com/foamtree/demo/index.html</text-property>
+        </label>
+        <label id="40">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">9pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="fontStyle">normal</property>
+            <property name="color">#9B9B9B</property>
+            <property name="paddingLeft">10pt</property>
+            <property name="paddingBottom">20pt</property>
+            <text-property name="text">This is a hard-coded example of FoamTree to show that it can be loaded in a Custom Visualization.  The next step is to associate it with data and build the data in the format FoamTree needs.</text-property>
+        </label>
+        <extended-item extensionName="HTMLControl" id="349">
+            <method name="clientOnCreate"><![CDATA[var containerId = this.getId();
+var containerWidth = $("#" + containerId).width();
+var containerHeight = $("#" + containerId).height();
+	
+var callback = function() {
+
+
+      // Initialize FoamTree after the whole page loads to make sure
+      // the element has been laid out and has non-zero dimensions.
+      //window.addEventListener("load", function() {
+        var foamtree = new CarrotSearchFoamTree({
+          // Identifier of the HTML element defined above
+          id: containerId,
+
+          // Some data to visualize.
+          dataObject:
+{"groups":[
+  {"label":"Database", "weight":18, "groups":[
+    {"label":"Data Mining and Knowledge Discovery", "weight":4, "id":"1"},
+    {"label":"Software", "weight":3, "id":"2"},
+    {"label":"Large Databases", "weight":3, "id":"3"},
+    {"label":"Oracle Database 11g", "weight":2, "id":"4"},
+    {"label":"KDD", "weight":2, "id":"5"},
+    {"label":"Relationship", "weight":2, "id":"6"},
+    {"label":"Learning", "weight":2, "id":"7"},
+    {"label":"Research", "weight":2, "id":"8"},
+    {"label":"Science", "weight":2, "id":"9"},
+    {"label":"Other topics", "weight":0, "id":"10"}
+  ], "id":"0"},
+  {"label":"Data Mining Software", "weight":11, "groups":[
+    {"label":"Data Analysis", "weight":3, "id":"12"},
+    {"label":"Analytics", "weight":3, "id":"13"},
+    {"label":"Open Directory", "weight":2, "id":"14"},
+    {"label":"Model", "weight":3, "id":"15"},
+    {"label":"Process", "weight":3, "id":"16"},
+    {"label":"Consulting", "weight":2, "id":"17"},
+    {"label":"Other topics", "weight":0, "id":"18"}
+  ], "id":"11"},
+  {"label":"Knowledge Discovery", "weight":9, "groups":[
+    {"label":"Conferences in Data Mining", "weight":3, "id":"20"},
+    {"label":"KDD", "weight":2, "id":"21"},
+    {"label":"Emerging", "weight":2, "id":"22"},
+    {"label":"Industry", "weight":2, "id":"23"},
+    {"label":"Other topics", "weight":0, "id":"24"}
+  ], "id":"19"},
+  {"label":"Business Intelligence", "weight":7, "groups":[
+    {"label":"Definitions about Business Intelligence", "weight":2, "id":"26"},
+    {"label":"Warehousing", "weight":2, "id":"27"},
+    {"label":"Software", "weight":2, "id":"28"},
+    {"label":"Data Analysis", "weight":2, "id":"29"},
+    {"label":"Other topics", "weight":0, "id":"30"}
+  ], "id":"25"},
+  {"label":"Data Mining Conferences", "weight":7, "groups":[
+    {"label":"Definitions about Business Intelligence", "weight":2, "id":"32"},
+    {"label":"KDD", "weight":2, "id":"33"},
+    {"label":"Other topics", "weight":0, "id":"34"}
+  ], "id":"31"},
+  {"label":"Data Mining Tools", "weight":7, "groups":[
+    {"label":"Data Mining Tools Predict", "weight":2, "id":"36"},
+    {"label":"Analysis", "weight":2, "id":"37"},
+    {"label":"Powerful", "weight":2, "id":"38"},
+    {"label":"Other topics", "weight":0, "id":"39"}
+  ], "id":"35"},
+  {"label":"Techniques", "weight":8, "groups":[
+    {"label":"Predictive", "weight":2, "id":"41"},
+    {"label":"Research", "weight":2, "id":"42"},
+    {"label":"Other topics", "weight":0, "id":"43"}
+  ], "id":"40"},
+  {"label":"Technologies", "weight":9, "groups":[
+    {"label":"National Center for Data Mining", "weight":2, "id":"45"},
+    {"label":"Analytics", "weight":2, "id":"46"},
+    {"label":"Rapidly", "weight":2, "id":"47"},
+    {"label":"Other topics", "weight":0, "id":"48"}
+  ], "id":"44"},
+  {"label":"Oracle Data Mining", "weight":5, "groups":[
+    {"label":"Oracle Database 11g", "weight":2, "id":"50"},
+    {"label":"Guide", "weight":2, "id":"51"},
+    {"label":"ODM", "weight":2, "id":"52"}
+  ], "id":"49"},
+  {"label":"Introduction to Data Mining", "weight":6, "id":"53"},
+  {"label":"Extracting", "weight":7, "groups":[
+    {"label":"Large Databases", "weight":2, "id":"55"},
+    {"label":"Patterns", "weight":3, "id":"56"},
+    {"label":"Process", "weight":3, "id":"57"},
+    {"label":"Other topics", "weight":0, "id":"58"}
+  ], "id":"54"},
+  {"label":"Field of Data Mining", "weight":5, "groups":[
+    {"label":"Conferences in Data Mining", "weight":2, "id":"60"},
+    {"label":"Research", "weight":2, "id":"61"},
+    {"label":"Other topics", "weight":0, "id":"62"}
+  ], "id":"59"},
+  {"label":"Text Mining", "weight":4, "id":"63"},
+  {"label":"Applied", "weight":5, "id":"64"},
+  {"label":"SQL Server", "weight":3, "id":"65"},
+  {"label":"Predictive Modeling", "weight":4, "id":"66"},
+  {"label":"Concepts", "weight":4, "id":"67"},
+  {"label":"Data Mining Applications", "weight":4, "id":"68"},
+  {"label":"Privacy Preserving Data Mining", "weight":2, "id":"69"},
+  {"label":"Aspects of Data Mining", "weight":2, "id":"70"},
+  {"label":"Data Mining Algorithms", "weight":2, "id":"71"},
+  {"label":"Two Crows", "weight":2, "id":"72"},
+  {"label":"Data Mining is Defined", "weight":2, "id":"73"},
+  {"label":"Knowledge for Decision Making", "weight":2, "id":"74"},
+  {"label":"Class of Methods", "weight":2, "id":"75"},
+  {"label":"Blog", "weight":2, "id":"76"},
+  {"label":"Large Data Sets", "weight":2, "id":"77"},
+  {"label":"Series", "weight":2, "id":"78"},
+  {"label":"Other Topics", "weight":0, "id":"79"}
+]}
+        });
+      //});
+
+};
+
+//	>>>>>>>> LOAD THIS TOO IF USING MOBILE DEVICE >>>>>>>>>>>
+//
+//								http://get.carrotsearch.com/foamtree/demo/demos/assets/js/hammer.min.js
+
+head.load('http://get.carrotsearch.com/foamtree/demo/carrotsearch.foamtree.js', callback);]]></method>
+            <property name="summaryData">false</property>
+            <property name="height">757px</property>
+            <property name="width">100%</property>
+            <property name="displayName">FoamTree --cwong</property>
+        </extended-item>
+    </body>
+</report>
